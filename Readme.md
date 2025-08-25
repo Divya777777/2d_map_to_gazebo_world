@@ -12,6 +12,7 @@ The `2d_to_world` package is a ROS 2 utility that automates the creation of Gaze
 
 The `2d_to_world` package converts a 2D occupancy grid map into a 3D Gazebo world by first loading the map image and its metadata, then creating a binary mask to identify occupied areas. It extracts and simplifies contours from this mask, converting them to real-world coordinates. These contours are then broken into straight segments, which are merged if co-linear to form efficient wall representations. Finally, for each wall segment, the package generates corresponding 3D box models in Gazebo SDF format, positioned and oriented to match the 2D map, and outputs a complete Gazebo world file ready for simulation.
 
+![](https://github.com/Divya777777/2d_map_to_gazebo_world/blob/humble/Gifs/2d_to_world.gif)
 
 ## Usage Steps
 
@@ -32,7 +33,7 @@ pip install numpy Pillow scikit-image scipy PyYAML
     ```
 2.  **Clone the repository into your `src` folder:**
     ```bash
-    git clone <repository_url> # Replace with your repository URL
+    git clone https://github.com/Divya777777/2d_map_to_gazebo_world.git
     ```
 3.  **Build the package:**
     ```bash
@@ -69,6 +70,7 @@ Once the world file is generated, open it with Gazebo Harmonic:
 ```bash
 gz sim /path/to/generated/world/my_generated_world.world
 ```
+
 
 
 
