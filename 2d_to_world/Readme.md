@@ -32,7 +32,7 @@ pip install numpy Pillow scikit-image scipy PyYAML
     ```
 2.  **Clone the repository into your `src` folder:**
     ```bash
-    git clone <repository_url> # Replace with your repository URL
+    git clone https://github.com/Divya777777/2d_map_to_gazebo_world.git
     ```
 3.  **Build the package:**
     ```bash
