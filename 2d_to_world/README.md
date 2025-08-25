@@ -18,7 +18,7 @@ The `2d_to_world` package converts a 2D occupancy grid map into a 3D Gazebo worl
 
 ### 1. Prerequisites & Dependencies
 
-Ensure you have ROS 2 (Humble, Iron, Jazzy, or compatible) and Gazebo Harmonic installed. This package requires several Python libraries and ROS 2 packages. You can install the Python dependencies using pip:
+Ensure you have ROS 2 (Humble) and Gazebo Harmonic installed. This package requires several Python libraries and ROS 2 packages. You can install the Python dependencies using pip:
 
 ```bash
 pip install numpy Pillow scikit-image scipy PyYAML
