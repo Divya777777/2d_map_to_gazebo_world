@@ -42,8 +42,8 @@ class MapToGazeboSegments(Node):
         super().__init__('map_to_gazebo_segments')
 
         # ---- Parameters (with sensible defaults)
-        self.declare_parameter('map_path', '/home/divya/project/src/navigation_demo/maps/office_new.yaml')
-        self.declare_parameter('output_world', 'generated_world.world')
+        self.declare_parameter('map_path', '')
+        self.declare_parameter('output_world', '')
         self.declare_parameter('wall_height', 2.20)
         self.declare_parameter('wall_thickness', 0.15)
         self.declare_parameter('max_segments', 6000)

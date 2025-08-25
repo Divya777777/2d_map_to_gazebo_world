@@ -11,7 +11,7 @@ def generate_launch_description():
         DeclareLaunchArgument('wall_thickness', default_value='0.1'),
         
         Node(
-            package='navigation_demo',
+            package='2d_to_world',
             executable='2d_to_world',
             name='map_to_gazebo',
             output='screen',
